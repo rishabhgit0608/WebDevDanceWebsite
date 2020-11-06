@@ -1,0 +1,38 @@
+extends base.pug
+
+block scripts
+    script(src="../static/index.js")
+block style 
+    style
+        include ../static/styles.css
+block content
+
+    section#introSection
+      div 
+        | Welcome to my DanceAcademy.
+      div.small
+        | Eat Sleep Dance Repeat
+    section#secondSection
+      div.box
+        div.imo
+          img(src="../static/1.png")
+        div.para
+          |You can dance with the best.      
+      div.box
+        div.imo
+          img(src="../static/2.png")
+        div.para
+          |You can Dance with the best in the world.
+      div.box
+        div.imo
+          img(src="../static/3.png")
+        div.para
+          |You can Dance Like you always wanted too.
+    section#firstSection
+      h2
+        | Our Sponsors 
+      div#sponsor
+        img(src = "../static/logo1.png",class = "spImg")
+        img(src = "../static/logo2.png",class = "spImg")
+        img(src = "../static/logo3.png",class=  "spImg")
+        img(src=  "../static/logo4.png",class = "spImg")

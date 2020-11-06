@@ -1,0 +1,22 @@
+extends base.pug
+
+block scripts
+    script(src="../static/index.js")
+block style 
+    style
+        include ../static/styles.css
+        include ../static/contactStyle.css
+block content
+    h1
+        | Contact-Us
+    div.forms
+        form(action="/contact",method="post")
+            input(type="text",placeholder = "Enter your name" ,class="myInput" , name="name")
+            input(type="phone",placeholder = "Enter your phone number" ,class="myInput" , name="phone")
+            input(type="email",placeholder = "Enter your email" ,class="myInput" , name="email")
+            input(type="text",placeholder = "Enter your culture" ,class="myInput" , name="culture")
+            input(type="text",placeholder = "Enter your genre" ,class="myInput" , name="genre")
+            button.btn
+                |Submit
+
+    

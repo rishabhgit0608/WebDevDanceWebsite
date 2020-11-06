@@ -1,0 +1,37 @@
+
+doctype html
+
+html
+  head
+    style
+      include ../static/styles.css
+  body
+    nav#navbar
+      ul
+        li #[a(href="/") Home]
+        li #[a(href="/") About]
+        li #[a(href="/") Services]
+        li #[a(href="/") Contact Us]
+
+    section#introSection
+      div 
+        | Welcome to my DanceAcademy.
+      div.small
+        | Eat Sleep Dance Repeat
+    section#firstSection
+      h2
+        | Our Sponsors 
+      div#sponsor
+            img(src = "../static/logo1.png",class = "spImg")
+            img(src = "../static/logo2.png",class = "spImg")
+            img(src = "../static/logo3.png",class=  "spImg")
+            img(src=  "../static/logo4.png",class = "spImg")
+
+    footer#footer
+      | 2020 &copy; Rishabhcodinganddancing.com. ALL rights reserved
+    script
+      include ../static/index.js
+
+    
+
+

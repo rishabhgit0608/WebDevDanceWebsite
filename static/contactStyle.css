@@ -1,0 +1,28 @@
+body{
+    background-color: pink;
+}
+h1{
+    
+    text-align: center;
+}
+.forms{
+    height: 73vh;
+}
+.myInput{
+
+    border:2px solid black;
+    font-size: 16px;
+    display: block;
+    margin:10px auto;
+    width: 50%;
+    padding: 9px;
+}
+.btn{
+    color: white;
+    background-color: black;
+    width: 10%;
+    height: 10%;
+    padding: 9px;
+    position: relative;
+    left: 44%;
+}
